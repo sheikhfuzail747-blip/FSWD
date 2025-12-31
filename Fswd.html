@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Bootstrap Webpage</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyWebsite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1>Welcome to My Website</h1>
+      <p class="lead">A simple and useful webpage built with Bootstrap</p>
+      <a href="#features" class="btn btn-light mt-3">Learn More</a>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Features</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Responsive</h5>
+              <p class="card-text">
+                The layout adjusts automatically for phones, tablets, and desktops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Easy to Use</h5>
+              <p class="card-text">
+                Built with Bootstrap components that are simple and clean.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Customizable</h5>
+              <p class="card-text">
+                You can easily change colors, text, and layout.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 MyWebsite. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
